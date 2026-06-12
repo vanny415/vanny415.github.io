@@ -2,14 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Free GitHub Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Portfolio</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; }
-        h1 { color: #333; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; background: #f9f9f9; }
+        header { background: #1a1a1a; color: white; padding: 60px 20px; text-align: center; }
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; color: #bbb; }
+        .container { max-width: 1000px; margin: 40px auto; padding: 0 20px; }
+        h2 { border-bottom: 2px solid #007acc; padding-bottom: 8px; margin-bottom: 20px; color: #1a1a1a; }
+        .about-text { font-size: 1.1rem; margin-bottom: 40px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .card { background: white; border: 1px solid #ddd; border-radius: 6px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+        .card h3 { margin-bottom: 10px; color: #007acc; }
+        .card p { margin-bottom: 15px; font-size: 0.95rem; }
+        .tags { margin-bottom: 15px; }
+        .tag { background: #e1f0fa; color: #007acc; padding: 3px 8px; border-radius: 4px; font-size: 0.8rem; margin-right: 5px; font-weight: bold; }
+        .btn { display: inline-block; background: #007acc; color: white; padding: 8px 16px; text-align: center; text-decoration: none; border-radius: 4px; font-size: 0.9rem; }
+        .btn:hover { background: #005999; }
+        footer { text-align: center; padding: 40px 20px; background: #1a1a1a; color: #888; margin-top: 60px; }
+        footer a { color: #007acc; text-decoration: none; margin: 0 10px; }
     </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my free website hosted on GitHub Pages.</p>
+
+    <header>
+        <h1>Your Name</h1>
+        <p>Your Profession / Job Title (e.g., Frontend Developer | Data Analyst)</p>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p class="about-text">Write a punchy 2-3 sentence summary here. Focus on your core skills, what you enjoy building, and your current career goal. Keep it professional and direct.</p>
+        </section>
+
+        <section>
+            <h2>Featured Projects</h2>
+            <div class="grid">
+                <!-- Project 1 -->
+                <div class="card">
+                    <h3>Project Name One</h3>
+                    <p>A brief 2-sentence description of what this project does and the problem it solves for the user.</p>
+                    <div class="tags">
+                        <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+                    </div>
+                    <a href="#" class="btn" target="_blank">View Project</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card">
+                    <h3>Project Name Two</h3>
+                    <p>A brief 2-sentence description of what this project does and the problem it solves for the user.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span><span class="tag">SQL</span>
+                    </div>
+                    <a href="#" class="btn" target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2026 Your Name. Connect with me:</p>
+        <p style="margin-top: 10px;">
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a> | 
+            <a href="mailto:your.email@example.com">Email</a> | 
+            <a href="https://github.com" target="_blank">GitHub</a>
+        </p>
+    </footer>
+
 </body>
 </html>
